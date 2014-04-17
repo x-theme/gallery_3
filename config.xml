@@ -1,16 +1,20 @@
 <?xml version="1.0"?>
 <config>
+	<id>theme gallery-2</id>
 	<type>theme</type>
 	<view>pc,mobile</view>
+	<category>gallery</category>
 	<name>
 		<en>Gallery Theme No. 3</en>
 		<ko>Gallery Theme No. 3</ko>
 	</name>
 	<demo>http://gallery3.philgo.net</demo>
 	<version>0.1</version>
+	<author>JaeHo Song</author>
+	<email>thruthesky@gmail.com</email>
 	<short>
-		<en></en>
-		<ko></ko>
+		<en>Gallery no. 3</en>
+		<ko>Gallery no. 3</ko>
 	</short>
 	<detail>
 		<en></en>
