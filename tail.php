@@ -85,3 +85,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 		</div><!--inner-footer-->
 	</div><!--footer-->
 </div><!--layout-->
+
+<style>
+.widget-admin > .button {
+	z-index: 999999;
+}
+</style>
