@@ -23,8 +23,8 @@
 	<menu>
 		<top>
 			<name>
-				<en>Menu Top</en>
-				<ko>상단 톱 메뉴</ko>
+				<en>Second Menu Group</en>
+				<ko>두번째 메뉴 그룹</ko>
 			</name>
 			<max>10</max>
 		</top>
@@ -44,8 +44,8 @@
 		</right>
 		<bottom>
 			<name>
-				<en>Menu Bottom</en>
-				<ko>하단 메뉴</ko>
+				<en>Third Menu Group</en>
+				<ko>세번째 메뉴 그룹</ko>
 			</name>
 			<max>6</max>
 		</bottom>
