@@ -44,27 +44,34 @@
 					</div>
 					<? 				
 					$count = 1;
-					foreach ( $banners as $banner ) {										
-						if( $banner['href'] ) $banner_href = $banner['href'];
-						else $banner_href = 'javascript:void(0)';
+					foreach ( $banners as $banner ) {																
 						if( $banner['subject'] ) $banner_subject = cut_str($banner['subject'],40,'...');
 						else $banner_subject = "No Subject";
 						if( $banner['content'] ) $banner_content = cut_str($banner['content'],100,'...');
 						else $banner_content = "No Content";
+						
+						if ( !$url = $banner['href'] ) {
+							$url = "javascript:void(0);";
+							$target = "";
+						}
+						else {
+							$target = "target='_blank'";
+						}
+						
 						?>
 						<div class='banner_holder'>
-							<a href='<?=$banner_href?>'>
+							<a href='<?=$url?>' <?=$target?>>
 								<img banner_num = <?=$count?> src='<?=$banner['src']?>'/>
 							</a>
 							<div class='text_content'>
 								<div class = 'banner_subject'>
-									<a href='<?=$banner_href?>'>
+									<a href='<?=$url?>' <?=$target?>>
 										<?=$banner_subject?>
 									</a>
 								</div>
 								<div class = 'banner_content'>
 								
-									<a href='<?=$banner_href?>'>
+									<a href='<?=$url?>' <?=$target?>>
 										<?=$banner_content?>
 									</a>
 								</div>
