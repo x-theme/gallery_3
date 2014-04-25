@@ -47,30 +47,6 @@
 	border:1px solid #c0c0c0;
 }
 
-.bottom-left {
-	width: 35%;
-}
-
-.bottom-middle {
-	width: 30%;
-} 
-
-.bottom-right {
-	width: 35%;
-}
-
-.bottom-left .inner{
-	margin-right:3px;
-}
-
-.bottom-middle .inner {
-	margin:0 4px;
-} 
-
-.bottom-right .inner {
-	margin-left:3px;
-}
-
 @media only screen and (max-width: 767px) {
 	.layout .content .inner-content {
 		padding: 0; 
