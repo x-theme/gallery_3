@@ -1,5 +1,28 @@
 <div class='config-wrapper'>
 <div class='config-title'>
+	<span class='config-title-info'>Footer Menu Titles</span>
+	<span class='config-title-notice'>
+		<span class='user-google-guide-button' page = 'google_doc_travel_1_3' document_name = 'https://docs.google.com/document/d/1hiM2OIFlCkASMOgnyBsrTVcvICZz26oIze9Cz7p9BI8/pub#h.5bu4gi87qhep'>[설명 보이기]</span>
+		<img src='<?=module('img/setting_2.png')?>'>
+	</span>
+	</div>
+<div class='config-container'>
+<div class='hidden-google-doc google_doc_travel_1_3'>	
+</div>
+	<table cellspacing='0' cellpadding='10' width='100%'>
+		<? for( $i = 1; $i <= 4; $i++ ) { ?>
+			<tr valign='top'>
+				<td><span class='title-small'>Footer Menu Title No. <?=$i?></span><input type='text' name='footer_menu_title<?=$i?>' value='<?=x::meta("footer_menu_title$i")?>' /></td>
+			</tr>
+		<? } ?>
+	</table>
+</div>
+	<input type='submit' value='업데이트'>
+	<div style='clear:right;'></div>
+</div>
+
+<div class='config-wrapper'>
+<div class='config-title'>
 	<span class='config-title-info'>메인 롤링 배너</span>
 	<span class='config-title-notice'>
 		<span class='user-google-guide-button' page = 'google_doc_travel_1_4' document_name = 'https://docs.google.com/document/d/1hiM2OIFlCkASMOgnyBsrTVcvICZz26oIze9Cz7p9BI8/pub#h.5bu4gi87qhep'>[설명 보이기]</span>

@@ -9,27 +9,51 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 		<div class='inner-footer'>
 			<div class='footer-full-links'>
 				<div class='inner' style='position: relative'>
+					<?
+						for ( $i=1; $i<=4; $i++) $footer_menu_title[] = x::meta("footer_menu_title$i");
+						$i = 0;
+					?>
 					<span class='full-link-title'>전체보기<img src="<?=x::theme_url('img/close_footer.png')?>" class='close_mobile_footer'/></span>
 					<div class='main-menu-links'>
-						<span class='links-titles'>메인메뉴<img src="<?=x::theme_url('img/footer_menu_close.gif')?>" class='footer_menu_arrow'/></span>
+						<span class='links-titles'>
+							<?
+								if ( $footer_menu_title[$i] ) echo $footer_menu_title[$i++];
+								else echo "메인메뉴";
+							?>
+							<img src="<?=x::theme_url('img/footer_menu_close.gif')?>" class='footer_menu_arrow'/></span>
 						<ul>
 							<?="<li class='first-menu'>" . implode( "</li><li>", x::menu_links() ) . "</li>"?>
 						</ul>
 					</div>
 					<div class='top-menu-links'>
-						<span class='links-titles'>오른쪽 상단<img src="<?=x::theme_url('img/footer_menu_close.gif')?>" class='footer_menu_arrow'/></span>
+						<span class='links-titles'>
+							<?
+								if ( $footer_menu_title[$i] ) echo $footer_menu_title[$i++];
+								else echo "오른쪽 상단";
+							?>
+							<img src="<?=x::theme_url('img/footer_menu_close.gif')?>" class='footer_menu_arrow'/></span>
 						<ul>
 							<?="<li class='first-menu'>" . implode( "</li><li>", x::menu_links('top') ) . "</li>"?>
 						</ul>
 					</div>
 					<div class='footer-menu-links'>
-						<span class='links-titles'>하단<img src="<?=x::theme_url('img/footer_menu_close.gif')?>" class='footer_menu_arrow'/></span>
+						<span class='links-titles'>
+							<?
+								if ( $footer_menu_title[$i] ) echo $footer_menu_title[$i++];
+								else echo "하단";
+							?>
+							<img src="<?=x::theme_url('img/footer_menu_close.gif')?>" class='footer_menu_arrow'/></span>
 						<ul>
 							<?="<li class='first-menu'>" . implode( "</li><li>", x::menu_links('bottom') ) . "</li>"?>
 						</ul>
 					</div>
 					<div class='scrolling-links'>
-						<span class='links-titles'>하단 스크롤<img src="<?=x::theme_url('img/footer_menu_close.gif')?>" class='footer_menu_arrow'/></span>
+						<span class='links-titles'>
+							<?
+								if ( $footer_menu_title[$i] ) echo $footer_menu_title[$i++];
+								else echo "하단 스크롤";
+							?>
+							<img src="<?=x::theme_url('img/footer_menu_close.gif')?>" class='footer_menu_arrow'/></span>
 						<ul>
 							<?="<li class='first-menu'>" . implode( "</li><li>", x::menu_links('left') ) . "</li>"?>
 						</ul>
